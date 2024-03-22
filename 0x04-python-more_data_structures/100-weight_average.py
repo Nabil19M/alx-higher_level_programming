@@ -4,8 +4,8 @@ def weight_average(my_list=[]):
     num = denum = 0
     if my_list == [] or is None:
         return 0
-    for s, w in my_list:
-        num += s * w
-        denum += w
+    for s in my_list:
+        num += s[0] * s[1]
+        denum += s[1]
     avg = num / denum
     return avg
