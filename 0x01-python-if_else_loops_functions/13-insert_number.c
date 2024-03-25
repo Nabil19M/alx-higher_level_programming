@@ -30,5 +30,5 @@ listint_t *insert_node(listint_t **head, int number)
 			flag = 1;
 		}
 	}
-	return (add_nodeint_end(h, number))
+	return (add_nodeint_end(*h, number));
 }
