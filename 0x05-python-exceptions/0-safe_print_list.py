@@ -6,7 +6,12 @@ def safe_print_list(my_list=[], x=0):
             print(my_list[i], end="")
             count = count + 1
         except IndexError:
-            print("")
+            None
     print()
     return (count)
-    
+
+my_list = [1, 2, 3, 4]
+x = len(my_list) + 1
+
+nb_print = safe_print_list(my_list, x)
+print("{:d}".format(nb_print))
