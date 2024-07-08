@@ -4,9 +4,14 @@
 
 class Rectangle:
     """Represent a rectangle."""
+
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
+
+    def __del__(self):
+        print("Bye rectangle...")
+        del self
 
     def __str__(self):
         if self.width == 0 or self.height == 0:
@@ -17,10 +22,6 @@ class Rectangle:
 
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
-
-    def __del__(self):
-        print("Bye rectangle...")
-        del self
 
     @property
     def width(self):
