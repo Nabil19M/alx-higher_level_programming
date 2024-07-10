@@ -3,7 +3,7 @@
     """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """check through isinstance function.
 
         Args:
@@ -13,6 +13,6 @@ def is_same_class(obj, a_class):
         Returns:
             True : if object has instatiated from specific class
         """
-    if type(obj) == a_class:
+    if isinstance(obj, a_class):
         return True
     return False
