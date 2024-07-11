@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Rectangle module imported"""
 Rectangle = __import__('9-rectangle').Rectangle
 """Defines a Sqaure class inherited from geometry"""
 
