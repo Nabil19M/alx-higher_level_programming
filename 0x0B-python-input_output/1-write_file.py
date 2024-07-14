@@ -11,7 +11,7 @@ def write_file(filename="", text=""):
         text (str, optional): _description_. Defaults to "".
     """
     with open(filename, mode="w", encoding="utf-8") as file:
-        return file.write(text)
+        file.write(text)
 
 
 nb_characters = write_file("my_first_file.txt", "This School is so cool!\n")
