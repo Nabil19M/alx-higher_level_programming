@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ importing json"""
 import json
-""" Defines function treturns an object (Python DS) 
+""" Defines function treturns an object (Python DS)
     represented by a JSON string
     """
 
