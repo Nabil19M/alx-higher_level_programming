@@ -3,7 +3,7 @@
     """
 
 
-def class_to_join(obj):
+def class_to_json(obj):
     """ Returns the dictionary description with simple data structure
     for JSON serialization of an object.
 
