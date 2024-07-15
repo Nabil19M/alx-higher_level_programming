@@ -11,7 +11,7 @@ filename = "add_item.json"
 my_obj = []
 try:
     my_obj = load_from_json_file(filename)
-except:
+except FileNotFoundError:
     my_obj = []
 
 for arg in sys.argv[1:]:
