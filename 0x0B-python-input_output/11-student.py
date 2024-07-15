@@ -21,12 +21,15 @@ class Student:
         Args:
             attrs (list): (Optional) The attributes to represent.
         """
-        if (type(attrs) == list and
-                all(type(item) == str for item in attrs)):
+        if (type(attrs) is list and
+                all(type(item) is str for item in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
 
     def reload_from_json(self, json):
-        self.first_name = json["first_name"]
-        self.last_name = json["last_name"]
-        self.age = json["age"]
+        try:
+            self.first_name = json["first_name"]
+            self.last_name = json["last_name"]
+            self.age = json["age"]
+        except KeyError:
+            pass
