@@ -5,7 +5,7 @@
 
 class Base:
     """Defines A base class for all other incoming classes
-    """    
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
