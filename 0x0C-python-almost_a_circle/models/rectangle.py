@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ importing the base class for inhertiance """
-from models.base import Base
+from base import Base
+
 """ Define a rectangle class inhertied from base class
     """
 
@@ -11,6 +12,7 @@ class Rectangle(Base):
     Args:
         Base (_cls_): the parent class
     """
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a new Rectangle instance.
         Args:
@@ -111,3 +113,6 @@ class Rectangle(Base):
         else:
             for k, value in kwargs.items():
                 setattr(self, k, value)
+
+    def to_dictionary(self):
+        return self.__dict__
