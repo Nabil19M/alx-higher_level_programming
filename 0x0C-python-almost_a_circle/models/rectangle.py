@@ -7,6 +7,15 @@ from models.base import Base
 
 class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initialize a new Rectangle instance.
+        
+        Args:
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
+            x (int, optional): The x-coordinate of the rectangle. Defaults to 0.
+            y (int, optional): The y-coordinate of the rectangle. Defaults to 0.
+            id (int, optional): The id of the rectangle. Defaults to None.
+        """
         super().__init__(id)
         self.height = height
         self.width = width
@@ -14,6 +23,7 @@ class Rectangle(Base):
         self.y = y
 
     def __str__(self) -> str:
+        """Return a string representation of the rectangle."""
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
                 f"{self.width}/{self.height}")
 
