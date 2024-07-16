@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ importing the base class for inhertiance """
-from base import Base
+from models.base import Base
 
 """ Define a rectangle class inhertied from base class
     """
@@ -127,13 +127,3 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y
         }
-
-if __name__ == "__main__":
-
-    r1 = Rectangle(10, 7, 2, 8)
-    dictionary = r1.to_dictionary()
-    json_dictionary = Base.to_json_string([dictionary])
-    print(dictionary)
-    print(type(dictionary))
-    print(json_dictionary)
-    print(type(json_dictionary))
