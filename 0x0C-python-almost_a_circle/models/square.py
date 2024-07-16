@@ -39,19 +39,9 @@ class Square(Rectangle):
                 setattr(self, k, v)
 
     def to_dictionary(self):
+        """ generate dict representation for square
+
+        Returns:
+            _dict_: string representation of sqaure attributes
+        """
         return self.__dict__
-
-
-if __name__ == "__main__":
-
-    s1 = Square(10, 2, 1)
-    print(s1)
-    s1_dictionary = s1.to_dictionary()
-    print(s1_dictionary)
-    print(type(s1_dictionary))
-
-    s2 = Square(1, 1)
-    print(s2)
-    s2.update(**s1_dictionary)
-    print(s2)
-    print(s1 == s2)

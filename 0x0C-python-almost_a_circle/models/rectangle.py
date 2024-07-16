@@ -115,4 +115,9 @@ class Rectangle(Base):
                 setattr(self, k, value)
 
     def to_dictionary(self):
+        """ generate dict representation for square
+
+        Returns:
+            _dict_: string representation of sqaure attributes
+        """
         return self.__dict__
