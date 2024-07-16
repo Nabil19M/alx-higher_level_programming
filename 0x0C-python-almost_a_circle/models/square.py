@@ -14,6 +14,14 @@ class Square(Rectangle):
     """
 
     def __init__(self, size, x=0, y=0, id=None):
+        """Initialize a new Square
+
+        Args:
+            size (int): The size of the new square
+            x (int): The x coordinate of the new square
+            y (int): The y coordinate of the new square
+            id (int): The id of the new square
+        """
         super().__init__(size, size, x, y, id)
 
     def __str__(self) -> str:
@@ -29,6 +37,12 @@ class Square(Rectangle):
         self.height = size
 
     def update(self, *args, **kwargs):
+        """Update the instance attributes
+
+        Args:
+            *args: Variable length argument list for updating attributes
+            **kwargs: Arbitrary keyword arguments for updating attributes
+        """
         if args:
             att_list = ["id", "size", "x", "y"]
             for k, v in enumerate(args):
