@@ -6,6 +6,11 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """defineing rectangle calss
+
+    Args:
+        Base (_cls_): the parent class
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a new Rectangle instance.
         Args:
