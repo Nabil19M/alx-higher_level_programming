@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ importing the base class for inhertiance """
-from base import Base
+from models.base import Base
 
 """ Define a rectangle class inhertied from base class
     """

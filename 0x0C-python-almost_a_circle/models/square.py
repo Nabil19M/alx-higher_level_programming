@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ importing the Rectangle class for inhertiance """
 
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 """ Define a rectangle class inhertied from base class
     """
 
