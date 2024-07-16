@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ importing the base class for inhertiance """
-from models.base import Base
+from base import Base
 
 """ Define a rectangle class inhertied from base class
     """
@@ -120,4 +120,10 @@ class Rectangle(Base):
         Returns:
             _dict_: string representation of sqaure attributes
         """
-        return self.__dict__
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }

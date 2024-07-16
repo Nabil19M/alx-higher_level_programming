@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ importing the Rectangle class for inhertiance """
 
-from models.rectangle import Rectangle
+from rectangle import Rectangle
 """ Define a rectangle class inhertied from base class
     """
 
@@ -58,4 +58,9 @@ class Square(Rectangle):
         Returns:
             _dict_: string representation of sqaure attributes
         """
-        return self.__dict__
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
