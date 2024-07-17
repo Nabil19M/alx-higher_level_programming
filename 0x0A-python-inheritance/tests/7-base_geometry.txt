@@ -53,13 +53,13 @@ TypeError: Silvia must be an integer
 Check when no argument is passed
 >>> bg.integer_validator()
 Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 Check when one argument is passed
 >>> bg.integer_validator("Silvia")
 Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 >>> bg.integer_validator(9)
 Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: integer_validator() missing 1 required positional argument: 'value'
