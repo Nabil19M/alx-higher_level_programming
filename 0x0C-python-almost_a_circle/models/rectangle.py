@@ -23,8 +23,8 @@ class Rectangle(Base):
             id (int, optional): The id of the rectangle. Defaults to None.
         """
         super().__init__(id)
-        self.height = height
         self.width = width
+        self.height = height
         self.x = x
         self.y = y
 
@@ -51,7 +51,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
-        if type(height) is not int:
+        if not isinstance(height, int):
             raise TypeError("height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
