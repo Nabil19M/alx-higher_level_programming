@@ -11,6 +11,7 @@ class TestBaseClass(unittest.TestCase):
     """
         Test class for the base class.
     """
+
     def test_id_none(self):
         """
             initialise an instance of the base class with no id
